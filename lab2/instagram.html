@@ -20,7 +20,8 @@
             padding: 40px;
             border: #ddd solid 1px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 10%;
+            width: 50%;
+            text-align: center;
         }
         .logo-container {
             text-align: center;
@@ -50,32 +51,97 @@
             cursor: pointer;
             font-size: 16px;
         }
-        .forgot-password,
-        .signup {
+        .F_link a{
+            text-decoration: none;
+            color: #113658;
+            font-size: smaller;
+            font-weight: bold;
+        }
+        .F_link{
+            margin-bottom: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(230, 230, 230);
+        }
+        #facebook-logo{
+            position: absolute;
+            top: 660px;
+            left: 1310px;
+        }
+        
+
+
+
+        .forgot-password a
+         {
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-        }
-        .signup a {
-            color: #3897f0;
             text-decoration: none;
+            color: #03080c;
         }
+        .signup  {
+            background-color: #fff;
+            padding: 40px;
+            border: #ddd solid 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: smaller;
+        }
+        .signup a{
+            text-decoration: none;
+            color: #2194ff;
+        }
+        .text{
+
+            width: 55%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 30px;
+
+        }
+        .app_google{
+            width: 50%;
+            text-align: center;
+            margin-left: 35px;
+        }
+
     </style>
 </head>
 <body>
-    <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
-    <div class="login-container">
-        <div class="logo-container">
-            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
-        </div>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button type="submit">Log In</button>
-        <div class="forgot-password">
-            <a href="#">Forgot password?</a>
+    <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="Instagram main">
+    <div class="box">
+        <div class="login-container">
+            <div class="logo-container">
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
+            </div>
+            <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+            <input type="password" placeholder="Пароль">
+            <button type="submit">Войти</button>
+            <div class="F_link">
+            <a href="#">
+                <img src="https://avatars.mds.yandex.net/i?id=8e4e2b06dfe3581df2a3486d4b8dace8998b37d2-12463617-images-thumbs&n=13" width="30px" alt="facebook" id="facebook-logo">
+                <span id="link_Facebook">Войти через Facebook</span>
+            </a>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Забыли пароль?</a>
+            </div>
         </div>
         <div class="signup">
-            <span>Don't have an account? </span><a href="#">Sign up</a>
+            <span>У вас ещё нет аккаунта? </span><a href="#">Зарегистрироваться</a>
+        </div>
+        <div class="text">
+            <p>
+                Установите приложение.
+            </p>
+        </div>
+        <div class="app_google">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" width="125px" alt="">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" width="100px" alt="">
         </div>
     </div>
 </body>
