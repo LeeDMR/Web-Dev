@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            }
+        .login-container {
+            
+            width: 15%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #facebook_text{
+            width: 20%;
+            font-size: 30px;
+            margin-right: 100px;
+        }
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .forgot-password,
+        .signup {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .forgot-password{
+            border-bottom: 1px solid rgb(230, 230, 230);
+            padding: 10px;
+        }
+        .forgot-password a {
+        text-decoration: none;
+        color: rgb(84, 84, 255);
+        border-bottom: none; 
+        
+        }
+        button[type="signup"] {
+            width: 50%; 
+            margin-top: 20px;
+            background-color:rgb(6, 197, 6);
+            font-size: 15px;
+        }
+        img.facebook-logo {
+            position: absolute;
+            top: 480;
+            left: 730;
+            width: 400px; 
+        }
+        #text_2{
+            text-align: center;
+            width: 500px;
+            position: absolute;
+            top: 840px;
+            left: 1340px;
+        }
+        #href_1{
+            font-weight: bold;
+            color: black;
+            
+        }
+        </style>
+    </head>
+    <body>
+        <p id="facebook_text">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" class="facebook-logo" alt="facebook img">
+            Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми
+        </p>
+        <div class="login-container">
+                <input type="text" name="email" placeholder="Электронный адрес или номер телефона">
+                <input type="password" name="password" placeholder="Пароль">
+                <button type="submit"><bold>Вход</bold></button>
+                <div class="forgot-password"><a href = "#">Забыли пароль?</a></div>
+                <button type="signup">Создать новый аккаунт</button>
+        </div>
+        <p id = "text_2">     
+           <span><a href="#" id = "href_1"><em>Создать cтраницу</em></a></span>  знаменитости, музыкальной группы или компании.
+        </p>
+
+
+    </body>
+</html>

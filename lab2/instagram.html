@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border: #ddd solid 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 10%;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            width: 150px;
+        }
+        input[type="text"],
+        input[type="password"]
+         {
+            width: 100%;
+            padding: 10px;
+            margin: 3px 0;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: #61acf3;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .forgot-password,
+        .signup {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .signup a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
+        </div>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">Log In</button>
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+        <div class="signup">
+            <span>Don't have an account? </span><a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
