@@ -12,6 +12,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component'; 
 import { ShippingComponent } from './shipping/shipping.component'; 
 import { ProductsComponent } from './products/products.component'; 
+import { AppComponent2 } from './app/app.component'; 
+import { ProductItemComponent } from './product-item/product-item.component'; 
 
 @NgModule({
   imports: [
@@ -24,6 +26,7 @@ import { ProductsComponent } from './products/products.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'products', component: ProductsComponent },
+      { path: 'app', component: AppComponent2 },
     ])
   ],
   declarations: [
@@ -35,6 +38,9 @@ import { ProductsComponent } from './products/products.component';
     CartComponent,
     ShippingComponent,
     ProductsComponent,
+    AppComponent2,
+    ProductItemComponent,
+
   ],
   bootstrap: [
     AppComponent
