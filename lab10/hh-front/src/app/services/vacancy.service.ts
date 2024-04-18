@@ -1,7 +1,5 @@
-// src/app/services/vacancy.service.ts
-
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http'; 
 import { Observable } from 'rxjs';
 import { Vacancy } from '../models';
 
@@ -9,20 +7,12 @@ import { Vacancy } from '../models';
   providedIn: 'root'
 })
 export class VacancyService {
-  private apiUrl = 'http://localhost:8000/api/vacancies/';  
+  private apiUrl = 'http://localhost:8000/api/api';
 
-  constructor(private http: HttpClient) { }
-
-
-  getVacancies(): Observable<Vacancy[]> {
-    return this.http.get<Vacancy[]>(this.apiUrl);
-  }
-
+  constructor(private http: HttpClient) {} 
 
   getVacanciesByCompany(companyId: number): Observable<Vacancy[]> {
-    const url = `${this.apiUrl}?company=${companyId}`; 
+    const url = `${this.apiUrl}/companies/${companyId}/vacancies`; 
     return this.http.get<Vacancy[]>(url);
   }
-
-
 }

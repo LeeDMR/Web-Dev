@@ -1,8 +1,9 @@
-// src/app/components/company-vacancies/company-vacancies.component.ts
+
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VacancyService } from '../services/vacancy.service';
 import { Vacancy } from '../models';
+import { CompanyService } from '../services/company.service';
 
 @Component({
   selector: 'app-company-vacancies',
@@ -12,16 +13,21 @@ import { Vacancy } from '../models';
   imports: [CommonModule]
 })
 export class CompanyVacanciesComponent implements OnChanges {
-  @Input() companyId?: number;  // Input property is now optional
+  @Input() companyId?: number;  
   vacancies: Vacancy[] = [];
 
   constructor(private vacancyService: VacancyService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (this.companyId) {  // Check for existence since it's now optional
-      this.vacancyService.getVacanciesByCompany(this.companyId).subscribe(vacancies => {
-        this.vacancies = vacancies;
-      });
+    if (changes['companyId'] && changes['companyId'].currentValue != null) {
+      this.getVacancies(this.companyId!);
     }
+  }
+
+  private getVacancies(companyId: number): void {
+    this.vacancyService.getVacanciesByCompany(companyId).subscribe(
+      (data: Vacancy[]) => this.vacancies = data,
+      error => console.error(error)
+    );
   }
 }

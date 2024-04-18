@@ -8,7 +8,7 @@ import { Vacancy } from '../models';
   providedIn: 'root'
 })
 export class CompanyService {
-  private apiUrl = 'http://localhost:8000/api/companies/';
+  private apiUrl = 'http://localhost:8000/api/api/companies/';
 
   constructor(private http: HttpClient) { }
 
